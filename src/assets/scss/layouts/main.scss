@@ -1,1 +1,73 @@
-@import '../include.scss'
+@import "../include.scss";
+@import "../helpers/index.scss";
+
+.container {
+    display: grid;
+    grid-template-columns: auto 0.6fr auto;
+    min-height: 100vh;
+
+    .left-sidebar {
+        background-color: $main-color;
+        .container {
+            margin: 42px 0px 0px 77px;
+            display: flex;
+            flex-direction: column;
+            .title {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 39px;
+                background: linear-gradient(82.68deg, #01429f -1.57%, #1498dd 30.7%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .navigation {
+                margin-top: 109px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                .nav-item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 30px;
+                    .nav-title {
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #656565;
+                        margin-left: 15px;
+                    }
+                }
+                .nav-item.active {
+                    .nav-title {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .main-section {
+        background-color: $secoundry-color;
+        .container {
+            margin: 42px 42px 0px 42px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .right-sidebar {
+        background-color: $main-color;
+        .container {
+            margin: 32px 32px 0px 32px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

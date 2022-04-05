@@ -12,7 +12,9 @@
             margin: 42px 0px 0px 77px;
             display: flex;
             flex-direction: column;
+            width: fit-content;
             .title {
+                width: fit-content;
                 font-family: "Inter";
                 font-style: normal;
                 font-weight: 900;
@@ -23,14 +25,18 @@
                 -webkit-text-fill-color: transparent;
             }
             .navigation {
+                width: fit-content;
                 margin-top: 109px;
-                &:last-child{
+                &:last-child {
                     margin-bottom: 0px;
                 }
                 .nav-item {
+                    cursor: pointer;
                     display: flex;
                     align-items: center;
                     margin-bottom: 30px;
+                    position: relative;
+                    z-index: 1;
                     .nav-title {
                         font-family: "Inter";
                         font-style: normal;
@@ -40,10 +46,34 @@
                         color: #656565;
                         margin-left: 15px;
                     }
+                    &:hover {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            opacity: 1;
+                            background-color: #161616;
+                            padding: 14px 0px 13px 21px;
+                            z-index: -1;
+                            width: 220px;
+                            height: 100%;
+                            border-radius: 10px;
+                            left: -21px;
+                            transition: all 0.3s;
+                        }
+                        .nav-title {
+                            color: #fff;
+                        }
+                        .icon {
+                            svg {
+                                fill: #fff;
+                                stroke: #fff;
+                            }
+                        }
+                    }
                 }
                 .nav-item.active {
                     .nav-title {
-                        font-family: 'Inter';
+                        font-family: "Inter";
                         font-style: normal;
                         font-weight: 600;
                         font-size: 18px;
@@ -70,4 +100,37 @@
             flex-direction: column;
         }
     }
+}
+
+.btn {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &.tweet {
+        background: linear-gradient(82.68deg, #01429f 26.88%, #1498dd 100%), rgba(196, 196, 196, 0.3);
+        border-radius: 70px;
+        width: 279px;
+        height: 51px;
+        border: solid;
+        border-image-slice: 0;
+        border-width: 0px;
+        &:hover{
+            background: 10px transparent;
+            border: solid;
+            border-image-slice: 1;
+            border-width: 2px;
+            border-radius: 70px;
+            border-image-source: linear-gradient(to left, #01429f, #1498dd);
+        }
+    }
+
 }

@@ -85,6 +85,7 @@
             <p class="nav-title">More</p>
           </div>
         </div>
+        <a class="btn tweet">Tweet</a>
       </div>
     </div>
     <div class="main-section">

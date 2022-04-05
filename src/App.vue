@@ -9,8 +9,9 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+
       <nav>
-        <RouterLink to="/">Homee</RouterLink>
+        <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
@@ -19,7 +20,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
   <RouterView />
 </template>
 
-<style>
+<style >
 @import '@/assets/base.css';
 
 #app {

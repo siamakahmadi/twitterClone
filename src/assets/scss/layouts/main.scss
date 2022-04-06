@@ -3,8 +3,12 @@
 
 .container {
     display: grid;
-    grid-template-columns: auto 0.6fr auto;
+    grid-template-columns: auto 0.9fr auto;
     min-height: 100vh;
+
+    @media (max-width: 640px) {
+        grid-template-columns: auto;
+    }
 
     .left-sidebar {
         background-color: $main-color;
@@ -82,34 +86,34 @@
                     }
                 }
             }
-            .profile-summary{
+            .profile-summary {
                 display: flex;
                 align-items: center;
                 gap: 29.5px;
                 position: relative;
                 z-index: 1;
                 cursor: pointer;
-                .profile-img{
+                .profile-img {
                     width: 61px;
                     height: 61px;
                     border-radius: 70px;
                     overflow: hidden;
-                    img{
+                    img {
                         width: 100%;
                         height: 100%;
-                        object-fit:cover;
+                        object-fit: cover;
                     }
                 }
-                .profile-info{
-                    .name{
-                        font-family: 'Inter';
+                .profile-info {
+                    .name {
+                        font-family: "Inter";
                         font-style: normal;
                         font-weight: 600;
                         font-size: 18px;
                         line-height: 22px;
                     }
-                    .user-name{
-                        font-family: 'Inter';
+                    .user-name {
+                        font-family: "Inter";
                         font-style: normal;
                         font-weight: 600;
                         font-size: 14px;
@@ -117,9 +121,9 @@
                         color: #656565;
                     }
                 }
-                &:hover{
-                    &::after{
-                        content: '';
+                &:hover {
+                    &::after {
+                        content: "";
                         position: absolute;
                         opacity: 1;
                         background-color: #161616;
@@ -134,21 +138,325 @@
                 }
             }
         }
+        @media (max-width: 640px) {
+            display: none;
+        }
     }
+
     .main-section {
         background-color: $secoundry-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
         .container {
             margin: 42px 42px 0px 42px;
             display: flex;
             flex-direction: column;
+            .main-title {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 39px;
+                color: #fff;
+            }
+            .new-tweet {
+                @media (max-width: 640px) {
+                    width: 100%;
+                }
+                margin-top: 30px;
+                width: 677px;
+                height: 115px;
+                border-radius: 30px;
+                background-color: #0b0b0d;
+                height: fit-content;
+                .write-tweet {
+                    padding: 26px 38px;
+                    display: flex;
+                    align-items: center;
+                    height: fit-content;
+                    .user-profile {
+                        overflow: hidden;
+                        width: 62px;
+                        height: 62px;
+                        border-radius: 100%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .input {
+                        width: 90%;
+                        height: 24px;
+                        textarea {
+                            width: 100%;
+                            height: fit-content;
+                            resize: none;
+                            background-color: transparent;
+                            border: none;
+                            &::placeholder {
+                                font-family: "Inter";
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 22px;
+                                color: #656565;
+                            }
+                            &:focus {
+                                border: none;
+                                outline: none;
+                            }
+                        }
+                        textarea[value] {
+                            color: #fff;
+                            font-family: "Inter";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            padding-left: 16px;
+                        }
+                    }
+                }
+                .tools{
+                    display: none;
+                    transition: all 0.3s;
+                }
+                .tools.active {
+                    transition: all 0.3s;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 15px 61px 15px 116px;
+                    align-items: center;
+                    .items {
+                        display: flex;
+                        gap: 30px;
+                    }
+                }
+            }
+            .tweet-body{
+                @media (max-width: 640px) {
+                    width: 100%;
+                }
+                margin-top: 18px;
+                width: 677px;
+                background-color: #0b0b0d;
+                border-radius: 30px;
+                .tweet-container{
+                    margin: 30px;
+                    .user-tweet{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: stretch;
+                        .user-info-body{
+                            display: flex;
+                            gap: 12px;
+                            height: fit-content;
+                            .user-profile{
+                                width: 70px;
+                                height: 70px;
+                                border-radius: 100%;
+                                overflow: hidden;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            .user-info{
+                                height: fit-content;
+                                display: flex;
+                                gap: 12px;
+                                flex-direction: column;
+                                .body{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+                                    .user-name{
+                                        height: fit-content;
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        line-height: 22px;
+                                    }
+
+                                    .tweet-time{
+                                        height: fit-content;
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 17px;
+                                        color: #656565;
+                                    }
+                                }
+                                .id{
+                                    .user-id{
+                                        height: fit-content;
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 17px;
+                                        color: #656565;
+                                    }
+                                }
+                               
+                            }
+                        }
+                        .icon{
+                            cursor: pointer;
+                        }
+                    }
+                    .tweet-content{
+                        margin-top: 10px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                    .tweet-toolbar{
+                        width: 80%;
+                        margin-top: 35px;
+                        display: flex;
+                        align-items: center;
+                        margin-left: 50px;
+                        justify-content: space-between;
+                        .item{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
         }
     }
     .right-sidebar {
         background-color: $main-color;
+        position: relative;
         .container {
             margin: 32px 32px 0px 32px;
             display: flex;
             flex-direction: column;
+            .search-box {
+                width: 328px;
+                height: 59px;
+                input {
+                    &::placeholder {
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #656565;
+                    }
+                    width: 100%;
+                    height: 59px;
+                    padding-left: 30px;
+                    border-radius: 40px;
+                    background-color: #161616;
+                    border: none;
+                }
+                input[value] {
+                    color: #fff;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+            .news {
+                margin-top: 35px;
+                width: 328px;
+                background-color: #161616;
+                border-radius: 40px;
+                padding: 23px 16px 24px 12px;
+                .news-title {
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-left: 29px;
+                }
+                .news-list {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 41px;
+                    .news-item {
+                        padding: 28px 17px 28px 22px;
+                        display: flex;
+                        gap: 12px;
+                        background: #0b0b0d;
+                        border-radius: 30px;
+                        margin-bottom: 14px;
+                        .news-title {
+                            max-width: 194px;
+                            font-family: "Inter";
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #ffffff;
+                        }
+                        .news-cover {
+                            width: 55px;
+                            height: 55px;
+                            border-radius: 20px;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+            .direct-message {
+                width: 328px;
+                cursor: pointer;
+                height: 61px;
+                background: #161616;
+                border-radius: 20px;
+                // padding: 20px 29px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: 32px;
+
+                .direct-message-navbar {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 0px 29px;
+                    .title {
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #fff;
+                    }
+                    .toolbar {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        @media (max-width: 640px) {
+            display: none;
         }
     }
 }
@@ -176,14 +484,18 @@
         border-width: 0px;
         transition: all 0.3s;
         border: solid 1px transparent;
-        &:hover{
-            background:  transparent;
+        &:hover {
+            background: transparent;
             border: solid 1px #1498dd;
-            .btn-title{
+            .btn-title {
                 color: #1498dd;
                 transition: all 0.3s;
             }
         }
     }
-
+    &.tweet1 {
+        background: linear-gradient(82.68deg, #01429f 26.88%, #1498dd 100%), rgba(196, 196, 196, 0.3);
+        border-radius: 70px;
+        padding: 11.5px 28.5px;
+    }
 }

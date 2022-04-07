@@ -324,6 +324,8 @@
             </div>
             <div class="input">
               <textarea
+                @focusin="activeFocus"
+                @focusout="notActiveFocus"
                 type="text"
                 value=""
                 placeholder="Wat,s happening?"
@@ -331,7 +333,7 @@
             </div>
           </div>
 
-          <div class="tools">
+          <div :class="showToolbar? 'tools active' :'tools' ">
             <div class="items">
               <div class="gallery">
                 <svg
@@ -643,16 +645,17 @@
 </template>
 
 <script setup>
-import { reactive } from "vue";
+import { ref } from "vue";
 
-const focused = reactive({ focus: 0 });
+const showToolbar = ref(false);
+
 
 function activeFocus() {
-  focused.focus++;
+  showToolbar.value = true
 }
 
 function notActiveFocus() {
-  focused.focus--;
+  showToolbar.value = false
 }
 </script>
 

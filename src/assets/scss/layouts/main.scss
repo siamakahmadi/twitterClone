@@ -25,9 +25,10 @@
                 font-weight: 900;
                 font-size: 32px;
                 line-height: 39px;
-                background: linear-gradient(82.68deg, #01429f -1.57%, #1498dd 30.7%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                color: #1498dd;
+                // background: linear-gradient(82.68deg, #01429f -1.57%, #1498dd 30.7%);
+                // -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
             }
             .navigation {
                 width: fit-content;
@@ -200,6 +201,13 @@
                             resize: none;
                             background-color: transparent;
                             border: none;
+                            color: #fff;
+                            font-family: "Inter";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            padding-left: 16px;
                             &::placeholder {
                                 font-family: "Inter";
                                 font-style: normal;
@@ -213,15 +221,7 @@
                                 outline: none;
                             }
                         }
-                        textarea[value] {
-                            color: #fff;
-                            font-family: "Inter";
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 19px;
-                            padding-left: 16px;
-                        }
+                        
                     }
                 }
                 .tools{

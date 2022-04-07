@@ -332,144 +332,144 @@
               ></textarea>
             </div>
           </div>
+            <div :class="showToolbar? 'tools active' :'tools' ">
+              <div class="items">
+                <div class="item">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                      stroke="#656565"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9 10C10.1046 10 11 9.10457 11 8C11 6.89543 10.1046 6 9 6C7.89543 6 7 6.89543 7 8C7 9.10457 7.89543 10 9 10Z"
+                      stroke="#656565"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.66992 18.95L7.59992 15.64C8.38992 15.11 9.52992 15.17 10.2399 15.78L10.5699 16.07C11.3499 16.74 12.6099 16.74 13.3899 16.07L17.5499 12.5C18.3299 11.83 19.5899 11.83 20.3699 12.5L21.9999 13.9"
+                      stroke="#656565"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="item">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.9999 13.43C13.723 13.43 15.1199 12.0331 15.1199 10.31C15.1199 8.58687 13.723 7.19 11.9999 7.19C10.2768 7.19 8.87988 8.58687 8.87988 10.31C8.87988 12.0331 10.2768 13.43 11.9999 13.43Z"
+                      stroke="#656565"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M3.6202 8.49C5.5902 -0.169998 18.4202 -0.159997 20.3802 8.5C21.5302 13.58 18.3702 17.88 15.6002 20.54C13.5902 22.48 10.4102 22.48 8.3902 20.54C5.6302 17.88 2.4702 13.57 3.6202 8.49Z"
+                      stroke="#656565"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </div>
+                <div class="item">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 19C15.31 19 18 16.31 18 13V8C18 4.69 15.31 2 12 2C8.69 2 6 4.69 6 8V13C6 16.31 8.69 19 12 19Z"
+                      stroke="#656565"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3 11V13C3 17.97 7.03 22 12 22C16.97 22 21 17.97 21 13V11"
+                      stroke="#656565"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.10986 7.47999C10.8899 6.82999 12.8299 6.82999 14.6099 7.47999"
+                      stroke="#656565"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.0298 10.48C11.2298 10.15 12.4998 10.15 13.6998 10.48"
+                      stroke="#656565"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="item">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.9702 22C17.4931 22 21.9702 17.5228 21.9702 12C21.9702 6.47715 17.4931 2 11.9702 2C6.44737 2 1.97021 6.47715 1.97021 12C1.97021 17.5228 6.44737 22 11.9702 22Z"
+                      stroke="#656565"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.20996 16C8.25996 17.51 10.02 18.5 12 18.5C13.98 18.5 15.73 17.51 16.79 16"
+                      stroke="#656565"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="tweet">
+                <a class="btn tweet1">tweet</a>
+              </div>
+            </div>
 
-          <div :class="showToolbar? 'tools active' :'tools' ">
-            <div class="items">
-              <div class="gallery">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
-                    stroke="#656565"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M9 10C10.1046 10 11 9.10457 11 8C11 6.89543 10.1046 6 9 6C7.89543 6 7 6.89543 7 8C7 9.10457 7.89543 10 9 10Z"
-                    stroke="#656565"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2.66992 18.95L7.59992 15.64C8.38992 15.11 9.52992 15.17 10.2399 15.78L10.5699 16.07C11.3499 16.74 12.6099 16.74 13.3899 16.07L17.5499 12.5C18.3299 11.83 19.5899 11.83 20.3699 12.5L21.9999 13.9"
-                    stroke="#656565"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div class="location">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.9999 13.43C13.723 13.43 15.1199 12.0331 15.1199 10.31C15.1199 8.58687 13.723 7.19 11.9999 7.19C10.2768 7.19 8.87988 8.58687 8.87988 10.31C8.87988 12.0331 10.2768 13.43 11.9999 13.43Z"
-                    stroke="#656565"
-                    stroke-width="1.5"
-                  />
-                  <path
-                    d="M3.6202 8.49C5.5902 -0.169998 18.4202 -0.159997 20.3802 8.5C21.5302 13.58 18.3702 17.88 15.6002 20.54C13.5902 22.48 10.4102 22.48 8.3902 20.54C5.6302 17.88 2.4702 13.57 3.6202 8.49Z"
-                    stroke="#656565"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
-              <div class="microphone">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 19C15.31 19 18 16.31 18 13V8C18 4.69 15.31 2 12 2C8.69 2 6 4.69 6 8V13C6 16.31 8.69 19 12 19Z"
-                    stroke="#656565"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3 11V13C3 17.97 7.03 22 12 22C16.97 22 21 17.97 21 13V11"
-                    stroke="#656565"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M9.10986 7.47999C10.8899 6.82999 12.8299 6.82999 14.6099 7.47999"
-                    stroke="#656565"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.0298 10.48C11.2298 10.15 12.4998 10.15 13.6998 10.48"
-                    stroke="#656565"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div class="emoji">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.9702 22C17.4931 22 21.9702 17.5228 21.9702 12C21.9702 6.47715 17.4931 2 11.9702 2C6.44737 2 1.97021 6.47715 1.97021 12C1.97021 17.5228 6.44737 22 11.9702 22Z"
-                    stroke="#656565"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7.20996 16C8.25996 17.51 10.02 18.5 12 18.5C13.98 18.5 15.73 17.51 16.79 16"
-                    stroke="#656565"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="tweet">
-              <a class="btn tweet1">tweet</a>
-            </div>
-          </div>
         </div>
 
-        <div class="tweet-body">
+        <div v-for="tweet in tweets" :key="tweet.id" class="tweet-body">
           <div class="tweet-container">
             
             <div class="user-tweet">
               <div class="user-info-body">
                 <div class="user-profile">
-                  <img src="../assets/images/profile1.jpg" alt="" />
+                  <img :src="tweet.userProfile" alt="" />
                 </div>
                 <div class="user-info">
                   <div class="body">
-                    <div class="user-name"><p>Siamak Ahmadi</p></div>
-                    <div class="tweet-time"><p>. 12m</p></div>
+                    <div class="user-name"><p>{{tweet.userName}}</p></div>
+                    <div class="tweet-time"><p>{{tweet.time}}</p></div>
                   </div>
                   <div class="id">
-                    <div class="user-id"><p>@_siamakahamdi</p></div>
+                    <div class="user-id"><p>{{tweet.userId}}</p></div>
                   </div>
                 </div>
               </div>
@@ -504,8 +504,7 @@
 
             <div class="tweet-content">
               <p>
-                ⚡️EBRD to close offices in Russia, Belarus.
-                The European Bank for Reconstruction and Development wrote that the decision was “the inevitable outcome” of Russia’s war in Ukraine with the help of Belarus. On March 9, the EBRD announced a 2 billion euros package in aid for Ukraine.
+                {{tweet.tweetBody}}
               </p>
             </div>
 
@@ -645,18 +644,33 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+  import { ref } from "vue";
 
-const showToolbar = ref(false);
+  const showToolbar = ref(false);
 
+  function activeFocus() {
+    showToolbar.value = true
+  }
 
-function activeFocus() {
-  showToolbar.value = true
-}
+  function notActiveFocus() {
+    showToolbar.value = false
+  }
+</script>
+<script>
 
-function notActiveFocus() {
-  showToolbar.value = false
-}
+  export default{
+    data() {
+      return{
+        tweets: {
+          1:{tweetBody:'UK govt defeated in the Lords 199 to 170  over its plans to introduce compulsory photo ID for voters in elections. I voted against the govt.Peers widened the range of documents a person could present to get a ballot paper.UK is on the road to fascism.', userName:'Siamak Ahmadi', userId:'@_siamakAhmadi',time:'1h', userProfile:'https://pbs.twimg.com/profile_images/1410509265874345985/ejh1OU2P_400x400.jpg'},
+          2:{tweetBody:'Das neue HUAWEI MateBook 14 überzeugt mit 2K FullView-Display, Ultraschlankem Metall-Gehäuse und AMD Ryzen™ Prozessor. Jetzt bestellen und HUAWEI Display 23.8" gratis dazu sichern!', userName:'Geoff Handley', userId:'@HandleyGeoff',time:'2h',userProfile:'https://pbs.twimg.com/profile_images/1202590021322194944/2xHBTbch_400x400.jpg'},
+          3:{tweetBody:'A stroll in the park for Palace, a far cry  from the great Everton sides I have watched over the years, what a shame.', userName:'Geoff Handley', userId:'@HandleyGeoff',time:'2h',userProfile:'https://pbs.twimg.com/profile_images/1202590021322194944/2xHBTbch_400x400.jpg'},
+          4:{tweetBody:'Beauport after winning the Optimum Pay Handicap Hurdle for Jordan Nailor and Nigel Twiston-Davies', userName:'Molly Hunter', userId:'@mollhun',time:'35m',userProfile:'https://pbs.twimg.com/profile_images/1468546948957409280/uFjRecoJ_400x400.jpg'},
+        }
+      }
+    }
+  }
+
 </script>
 
 <style lang="scss">

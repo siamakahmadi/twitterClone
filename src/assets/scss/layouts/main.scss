@@ -225,18 +225,61 @@
                     }
                 }
                 .tools{
-                    display: none;
+                    visibility: hidden;
                     transition: all 0.3s;
+                    padding: 0px;
+                    height: 0px;
+                    .items {
+                        display: none;
+                    }
+                    .tweet{
+                        display: none;
+                    }
                 }
                 .tools.active {
                     transition: all 0.3s;
                     display: flex;
+                    visibility: visible;
                     justify-content: space-between;
-                    padding: 15px 61px 15px 116px;
+                    padding: 0px 61px 15px 116px;
+                    @media (max-width: 640px) {
+                        padding: 0px 61px 15px 40px;
+                    }
                     align-items: center;
+                    height: 61px;
                     .items {
                         display: flex;
                         gap: 30px;
+                        @media (max-width: 640px) {
+                            gap: 15px;
+                        }
+                        .item{
+                            cursor: pointer;
+                            position: relative;
+                            z-index: 1;
+                            &:hover{
+                                svg{
+                                    path{
+                                        stroke: #fff;
+                                    }
+                                }
+                                &::after{
+                                    content: '';
+                                    width: 40px;
+                                    height: 40px;
+                                    background-color: #2C2C32;
+                                    position: absolute;
+                                    top: -7px;
+                                    left: -7px;
+                                    z-index: -1;
+                                    border-radius: 100%;
+
+                                }
+                            }
+                        }
+                    }
+                    .tweet{
+                        display: block;
                     }
                 }
             }

@@ -13,6 +13,8 @@
     .left-sidebar {
         background-color: $main-color;
         .container {
+            position: sticky;
+            top:0px;
             margin: 42px 0px 0px 77px;
             display: flex;
             flex-direction: column;
@@ -385,6 +387,8 @@
         background-color: $main-color;
         position: relative;
         .container {
+            position: sticky;
+            top:0px;
             margin: 32px 32px 0px 32px;
             display: flex;
             flex-direction: column;
@@ -503,6 +507,32 @@
         }
         @media (max-width: 640px) {
             display: none;
+        }
+    }
+
+    .navigationMobile{
+        display: none;
+        @media (max-width: 640px) {
+            display: block;
+
+            position: sticky;
+            bottom: 32px;
+            background: #171717;
+            border-radius: 20px;
+            height: 59px;
+            margin: 0px 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .navigation{
+            width: 100%;
+            .items{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
         }
     }
 }

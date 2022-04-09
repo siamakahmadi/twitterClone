@@ -9,24 +9,28 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      meta:{layout:"Main"}
     },
     {
       path: '/notification',
       name: 'notification',
-      component: Notification
+      component: Notification,
+      meta:{layout:"Main"}
     },
     {
       path: '/message',
       name: 'message',
-      component: Message
+      component: Message,
+      meta:{layout:"Main"}
     },
     {
       path: '/profile',
       name: 'profile',
-      component: Profile
+      component: Profile,
+      meta:{layout:"Main"}
     },
   ]
 })

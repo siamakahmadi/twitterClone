@@ -7,7 +7,7 @@
          <DirectIcon/>
         </div>
         <div class="open-direct">
-            <FlashIcon/>
+            <FlashIcon :class="directActive? 'rotate':'' "/>
         </div>
       </div>
     </div>
@@ -59,4 +59,9 @@ import { ref } from 'vue';
 
 <style lang="scss">
 @import './assets/style.scss';
+
+.rotate{
+    rotate: 180deg;
+}
+
 </style>

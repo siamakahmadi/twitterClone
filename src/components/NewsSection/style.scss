@@ -1,0 +1,25 @@
+.news {
+    margin-top: 35px;
+    width: 328px;
+    max-height: 500px;
+    
+    background-color: #161616;
+    border-radius: 40px;
+    padding: 23px 16px 24px 12px;
+    .news-title {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 29px;
+    }
+    .news-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 41px;
+       
+    }
+}

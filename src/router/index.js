@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/Home.vue'
-import Notification from '../views/Notification.vue'
-import Message from '../views/Message.vue'
-import Profile from '../views/Profile.vue'
+import Home from '@/views/Home/Index.vue'
+import Notification from '@/views/Notification.vue'
+import Message from '@/views/Message.vue'
+import Profile from '@/views/Profile.vue'
 
 
 const router = createRouter({
@@ -11,7 +11,7 @@ const router = createRouter({
     {
       path: '/home',
       name: 'home',
-      component: HomeView,
+      component: Home,
       meta:{layout:"Main"}
     },
     {

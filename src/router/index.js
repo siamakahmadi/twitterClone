@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home/index.vue'
+import Home from '../views/Home/index.vue'
 import Notification from '@/views/Notification.vue'
 import Message from '@/views/Message.vue'
 import Profile from '@/views/Profile/index.vue'

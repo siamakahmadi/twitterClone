@@ -205,7 +205,7 @@
 
 
 <script>
-import NewTweet from "../../components/NewTweet/Index.vue";
+import NewTweet from "@/components/NewTweet/index.vue";
 export default {
   data() {
     return {

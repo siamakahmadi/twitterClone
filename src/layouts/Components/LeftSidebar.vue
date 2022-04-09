@@ -277,7 +277,7 @@
         </div>
         <div class="profile-summary">
           <div class="profile-img">
-            <img src="../assets/images/profile1.jpg" alt="" />
+            <img src="@/assets/images/profile1.jpg" alt="" />
           </div>
           <div class="profile-info">
             <p class="name">Siamak Ahmadi</p>

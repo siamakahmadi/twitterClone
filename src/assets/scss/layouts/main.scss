@@ -239,40 +239,8 @@
                     }
                 }
             }
-            .direct-message {
-                width: 328px;
-                cursor: pointer;
-                height: 61px;
-                background: #161616;
-                border-radius: 20px;
-                // padding: 20px 29px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                bottom: 32px;
 
-                .direct-message-navbar {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    margin: 0px 29px;
-                    .title {
-                        font-family: "Inter";
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 18px;
-                        line-height: 22px;
-                        color: #fff;
-                    }
-                    .toolbar {
-                        display: flex;
-                        gap: 10px;
-                        align-items: center;
-                    }
-                }
-            }
+
         }
         @media (max-width: 640px) {
             display: none;

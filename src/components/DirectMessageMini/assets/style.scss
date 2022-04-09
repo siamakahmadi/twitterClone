@@ -1,0 +1,102 @@
+.direct-message {
+    width: 328px;
+    cursor: pointer;
+    height: auto;
+    background: #161616;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 32px;
+    transition: all 0.3s;
+
+    .direct-message-toolbar {
+        height: 61px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 29px;
+        position: sticky;
+        top: 0px;
+
+        .title {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #fff;
+        }
+        .toolbar {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+    }
+
+    .direct-message-body {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.direct-message.active {
+    max-height: 325px;
+    overflow-y: scroll;
+    box-shadow: 50px -45px 137px 96px #0b0b0d;
+    transition: all 0.3s;
+    .direct-message-body {
+        height: auto;
+        display: block;
+        visibility: visible;
+        margin: 0px 26px;
+        margin-bottom: 25px;
+        transition: all 0.3s;
+
+        .user-direct {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            .user-image {
+                width: 45px;
+                height: 45px;
+                border-radius: 100%;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .user-info {
+                .user-name {
+                    p {
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+                .message-summary {
+                    p {
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #656565;
+                    }
+                }
+            }
+            .direct-time {
+                p {
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #656565;
+                }
+            }
+        }
+    }
+}

@@ -61,12 +61,15 @@
         </div>
       </div>
     </div>
+
+
   </div>
 </template>
 
 <script setup>
 import LeftIcon from "./Icon/LeftIcon.vue";
 import MoreIcon from "./Icon/MoreIcon.vue";
+
 </script>
 
 <style lang="scss">

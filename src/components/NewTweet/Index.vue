@@ -54,5 +54,7 @@ function notActiveFocus() {
   showToolbar.value = false;
 }
 </script>
-<style>
+
+<style lang="scss">
+  @import './Assets/style.scss';
 </style>

@@ -3,51 +3,51 @@
     <div class="tweet-container">
       <div class="user-tweet">
         <div class="user-info-body">
-          <div class="user-profile">
+          <div class="tweet_user-profile">
             <img :src="image" alt="" />
           </div>
           <div class="user-info">
             <div class="body">
               <div class="user-name">
-                <p>{{userName}}</p>
+                <p>{{ userName }}</p>
               </div>
               <div class="tweet-time">
-                <p>{{tweetTime}}</p>
+                <p>{{ tweetTime }}</p>
               </div>
             </div>
             <div class="id">
               <div class="user-id">
-                <p>{{userId}}</p>
+                <p>{{ userId }}</p>
               </div>
             </div>
           </div>
         </div>
         <div class="icon">
-            <More/>
+          <More />
         </div>
       </div>
 
       <div class="tweet-content">
         <p>
-          {{tweetBody}}
+          {{ tweetBody }}
         </p>
       </div>
 
       <div class="tweet-toolbar">
         <div class="item">
-            <Comment/>
+          <Comment />
         </div>
 
         <div class="item">
-            <Retweet/>
+          <Retweet />
         </div>
 
         <div class="item">
-            <Like/>
+          <Like />
         </div>
 
         <div class="item">
-            <Share/>
+          <Share />
         </div>
       </div>
     </div>
@@ -55,41 +55,45 @@
 </template>
 
 <script>
-import Comment  from './Icon/Comment.vue';
-import Retweet from './Icon/Retweet.vue';
-import Like from './Icon/Like.vue';
-import Share from './Icon/Share.vue';
-import More from './Icon/More.vue';
+import Comment from "./Icon/Comment.vue";
+import Retweet from "./Icon/Retweet.vue";
+import Like from "./Icon/Like.vue";
+import Share from "./Icon/Share.vue";
+import More from "./Icon/More.vue";
 
 export default {
-    props:{
-        image:{
-            type:URL,
-            default:""
-        },
-        userName:{
-            type:Text,
-            default:""
-        },
-        tweetTime:{
-            type:Text,
-            default:""
-        },
-        userId:{
-            type:Text,
-            default:""
-        },
-        tweetBody:{
-            type:Text,
-            default:""
-        }
-
+  props: {
+    image: {
+      type: URL,
+      default: "",
     },
-    components:{
-        Comment,Retweet,Like,Share,More
-    }
+    userName: {
+      type: Text,
+      default: "",
+    },
+    tweetTime: {
+      type: Text,
+      default: "",
+    },
+    userId: {
+      type: Text,
+      default: "",
+    },
+    tweetBody: {
+      type: Text,
+      default: "",
+    },
+  },
+  components: {
+    Comment,
+    Retweet,
+    Like,
+    Share,
+    More,
+  },
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "./style.scss";
 </style>

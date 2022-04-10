@@ -51,6 +51,12 @@
                 <div class="title">Followers</div>
               </div>
             </div>
+            <div class="profile-navigate">
+              <div class="profile-navigate-item active"><p class="text">Tweets</p></div>
+              <div class="profile-navigate-item"><p class="text">Tweets & Replies</p></div>
+              <div class="profile-navigate-item"><p class="text">Media</p></div>
+              <div class="profile-navigate-item"><p class="text">Likes</p></div>
+            </div>
           </div>
         </div>
       </div>

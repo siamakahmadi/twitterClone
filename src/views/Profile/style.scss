@@ -1,31 +1,30 @@
-.profile{
-
+.profile {
     background-color: #161616;
-    .profile-container{
+    .profile-container {
         // margin: 42px 42px 0px 42px;
         @media (max-width: 640px) {
             // margin: 42px 15px 0px 15px;
         }
         width: 100%;
-        .top-bar{
+        .top-bar {
             display: flex;
             justify-content: space-between;
             padding: 35px 25px;
             align-items: center;
-            .left-section{
+            .left-section {
                 display: flex;
                 gap: 39px;
                 align-items: center;
-                .user-info{
-                    .user-name{
-                        font-family: 'Inter';
+                .user-info {
+                    .user-name {
+                        font-family: "Inter";
                         font-style: normal;
                         font-weight: 600;
                         font-size: 22px;
                         line-height: 27px;
                     }
-                    .tweet-number{
-                        font-family: 'Inter';
+                    .tweet-number {
+                        font-family: "Inter";
                         font-style: normal;
                         font-weight: 600;
                         font-size: 14px;
@@ -35,48 +34,53 @@
                 }
             }
         }
-        .user-profile{
+        .user-profile {
             padding: 0px 25px;
-            .user-profile-container{
-                background-color: #0B0B0D;
+            .user-profile-container {
+                background-color: #0b0b0d;
                 border-radius: 30px;
                 padding: 18px;
-                .profile-cover{
+
+                .profile-cover {
                     width: 100%;
                     height: 214px;
                     overflow: hidden;
                     border-radius: 30px;
-                    img{
+                    img {
                         width: 100%;
                         height: 100%;
-                        object-fit:cover;
+                        object-fit: cover;
                     }
                 }
-                .profile-detail{
+                .profile-detail {
                     padding: 0px 59px;
-                    .profile-image{
+                    @media (max-width: 640px) {
+                        padding: 0px 29px;
+                    }
+                    .profile-image {
                         margin-top: -60px;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        .image{
+                        .image {
                             width: 105px;
                             height: 105px;
                             border-radius: 30px;
-                            outline: 6px solid #0B0B0D;
+                            outline: 6px solid #0b0b0d;
                             overflow: hidden;
-                            img{
+                            img {
                                 width: 100%;
                                 height: 100%;
                                 object-fit: cover;
                             }
                         }
-                        .follow-status{
-                            a{
+                        .follow-status {
+                            a {
                                 padding: 14.5px 34.5px;
-                                background: linear-gradient(82.68deg, #01429F 26.88%, #1498DD 100%), rgba(196, 196, 196, 0.3);
+                                background: linear-gradient(82.68deg, #01429f 26.88%, #1498dd 100%),
+                                    rgba(196, 196, 196, 0.3);
                                 border-radius: 70px;
-                                font-family: 'Inter';
+                                font-family: "Inter";
                                 font-style: normal;
                                 font-weight: 600;
                                 font-size: 18px;
@@ -86,10 +90,10 @@
                             }
                         }
                     }
-                    .user-info{
+                    .user-info {
                         margin-top: 11px;
-                        .user-name{
-                            .text{
+                        .user-name {
+                            .text {
                                 font-style: normal;
                                 font-weight: 600;
                                 font-size: 22px;
@@ -97,9 +101,9 @@
                                 color: #fff;
                             }
                         }
-                        .profile-id{
+                        .profile-id {
                             margin-top: 5px;
-                            .text{
+                            .text {
                                 font-style: normal;
                                 font-weight: 600;
                                 font-size: 14px;
@@ -108,34 +112,34 @@
                             }
                         }
                     }
-                    .user-bio{
-                        .text{
-                            color: #FFFFFF;
+                    .user-bio {
+                        .text {
+                            color: #ffffff;
                             font-style: normal;
                             font-weight: 400;
                             font-size: 20px;
                             line-height: 30px;
-                            .mention{
-                                color: #1498DD;
+                            .mention {
+                                color: #1498dd;
                                 cursor: pointer;
                             }
                         }
                     }
-                    .profile-follow-detail{
+                    .profile-follow-detail {
                         display: flex;
                         align-items: center;
                         margin-top: 33px;
                         gap: 24px;
-                        .following{
+                        .following {
                             display: flex;
                             gap: 8px;
-                            .following{
+                            .following {
                                 font-style: normal;
                                 font-weight: 500;
                                 font-size: 20px;
                                 line-height: 24px;
                             }
-                            .title{
+                            .title {
                                 font-style: normal;
                                 font-weight: 400;
                                 font-size: 20px;
@@ -143,21 +147,75 @@
                                 color: #656565;
                             }
                         }
-                        .followers{
+                        .followers {
                             display: flex;
                             gap: 8px;
-                            .followers{
+                            .followers {
                                 font-style: normal;
                                 font-weight: 500;
                                 font-size: 20px;
                                 line-height: 24px;
                             }
-                            .title{
+                            .title {
                                 font-style: normal;
                                 font-weight: 400;
                                 font-size: 20px;
                                 line-height: 24px;
                                 color: #656565;
+                            }
+                        }
+                    }
+                    .profile-navigate {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0px 33px;
+                        @media (max-width: 640px) {
+                            padding: 0px 0px;
+                        }
+                        margin-top: 34px;
+                        .profile-navigate-item {
+                            .text {
+                                font-family: "Inter";
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 24px;
+                                color: #656565;
+                                position: relative;
+                                cursor: pointer;
+                                &:hover{
+                                    color: #fff;
+                                    font-weight: 500;
+                                    &::after{
+                                        content: '';
+                                        position: absolute;
+                                        background: linear-gradient(82.68deg, #01429F 26.88%, #1498DD 100%), rgba(196, 196, 196, 0.3);                                    width: 100%;
+                                        height: 4px;
+                                        border-radius: 4px;
+                                        left: 0px;
+                                        bottom: -8px;
+                                    }
+                                }
+                            }
+                        }
+                        .profile-navigate-item.active {
+                            .text {
+                                font-family: "Inter";
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 24px;
+                                color: #fff;         
+                                position: relative;                       
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    background: linear-gradient(82.68deg, #01429F 26.88%, #1498DD 100%), rgba(196, 196, 196, 0.3);                                    width: 100%;
+                                    height: 4px;
+                                    border-radius: 4px;
+                                    left: 0px;
+                                    bottom: -8px;
+                                }
                             }
                         }
                     }

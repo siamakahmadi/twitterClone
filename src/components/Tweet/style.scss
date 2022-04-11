@@ -86,6 +86,16 @@
             justify-content: space-between;
             .item {
                 cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .reaction{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #656565;
+                }
             }
         }
     }

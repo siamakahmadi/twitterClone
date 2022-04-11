@@ -35,15 +35,30 @@
 
       <div class="tweet-toolbar">
         <div class="item">
-          <Comment />
+          <div class="icon">
+            <Comment />
+          </div>
+          <p class="reaction">
+            22
+          </p>
         </div>
 
         <div class="item">
-          <Retweet />
+          <div class="icon">
+            <Retweet />
+          </div>
+          <p class="reaction">
+            3
+          </p>
         </div>
 
         <div class="item">
-          <Like />
+          <div class="icon">
+            <Like />
+          </div>
+          <p class="reaction">
+            56
+          </p>
         </div>
 
         <div class="item">

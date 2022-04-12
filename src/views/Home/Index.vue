@@ -5,8 +5,15 @@
 
       <NewTweet />
 
-      <Tweet v-for="item in tweets" :key="item.id" :userName="item.userName" :image="item.userProfile" :tweetTime="item.time" :userId="item.userId" :tweetBody="item.tweetBody" />
-
+      <Tweet
+        v-for="item in tweets"
+        :key="item.id"
+        :userName="item.userName"
+        :image="item.userProfile"
+        :tweetTime="item.time"
+        :userId="item.userId"
+        :tweetBody="item.tweetBody"
+      />
     </div>
   </div>
 </template>
@@ -60,7 +67,7 @@ export default {
   },
   components: {
     NewTweet,
-    Tweet
+    Tweet,
   },
 };
 </script>

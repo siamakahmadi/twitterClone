@@ -1,0 +1,29 @@
+.navigationMobile {
+    display: none;
+    @media (max-width: 640px) {
+        display: block;
+
+        position: sticky;
+        bottom: 32px;
+        background: #171717;
+        border-radius: 20px;
+        height: 59px;
+        margin: 0px 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation {
+        width: 100%;
+        .items {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            .item.router-link-active {
+                svg {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}

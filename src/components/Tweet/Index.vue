@@ -54,7 +54,9 @@
 
         <div class="item">
           <div class="icon">
-            <Like />
+            <div class="like">
+              <Like />
+            </div>
           </div>
           <p class="reaction">
             56

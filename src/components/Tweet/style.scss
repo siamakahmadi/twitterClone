@@ -89,6 +89,33 @@
                 display: flex;
                 align-items: center;
                 gap: 5px;
+                
+                .icon{
+                    .like{
+                        position: relative;
+                        z-index: 1;
+                       &:hover{
+                        svg{
+                            transition: all 0.3s;
+                            fill: red;
+                            path{
+                                stroke: red;
+                                transition: all 0.3s;
+                            }
+                        }
+                       }
+                    }
+                    .like.liked{
+                        svg{
+                            transition: all 0.3s;
+                            fill: red;
+                            path{
+                                stroke: red;
+                                transition: all 0.3s;
+                            }
+                        }
+                    }
+                }
                 .reaction{
                     font-style: normal;
                     font-weight: 600;

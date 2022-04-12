@@ -17,6 +17,6 @@
   import NewsSection from '@/components/NewsSection/index.vue'
 </script>
 
-<style>
-
+<style lang="scss">
+@import './assets/style/RightSidebar.scss';
 </style>

@@ -72,7 +72,7 @@
     </div>
 </template>
 
-<script setup>
+<script>
   import Home from './assets/icon/Home.vue';
   import Explore from './assets/icon/Explore.vue';
   import Notification from './assets/icon/Notification.vue';
@@ -81,8 +81,21 @@
   import List from './assets/icon/List.vue';
   import Profile from './assets/icon/Profile.vue';
   import More from './assets/icon/More.vue';
+export default{
+  components:{
+      Home,
+      Explore,
+      Notification,
+      Message,
+      Bookmark,
+      List,
+      Profile,
+      More
+  }
+}
+
 </script>
 
-<style>
-
+<style lang="scss">
+  @import './assets/style/leftSidebar.scss';
 </style>

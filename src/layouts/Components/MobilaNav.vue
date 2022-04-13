@@ -5,15 +5,15 @@
         <HomeIcon/>
       </router-link>
 
-      <router-link class="item" :to="{ name: 'notification' }">
+      <router-link class="item" :to="{ name: 'home' }">
         <ProfileIcon/>
       </router-link>
 
-      <router-link class="item" :to="{ name: 'message' }">
+      <router-link class="item" :to="{ name: 'home' }">
         <MessageIcon/>
       </router-link>
 
-      <router-link class="item" :to="{ name: 'profile' }">
+      <router-link class="item" :to="{ name: 'home' }">
         <NotificationIcon/>
       </router-link>
     </div>

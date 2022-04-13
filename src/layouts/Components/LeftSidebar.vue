@@ -3,58 +3,66 @@
       <div class="container">
         <p class="title">Twitter</p>
         <div class="navigation">
+
           <router-link  class="nav-item" :to="{name:'home'}">
             <div class="icon">
               <Home/>
             </div>
             <p class="nav-title">Home</p>
           </router-link >
+          
           <router-link :to="{name:'home'}" class="nav-item">
             <div class="icon">
                 <Explore/>
             </div>
             <p class="nav-title">Explore</p>
           </router-link>
-          <router-link :to="{name:'notification'}" class="nav-item">
+          
+          <router-link :to="{name:'home'}" class="nav-item">
             <div class="icon">
               <Notification/>
             </div>
             <p class="nav-title">Notifications</p>
-          </router-link>
-          <router-link :to="{name:'message'}" class="nav-item">
+          </router-link> 
+
+          <router-link :to="{name:'home'}" class="nav-item">
             <div class="icon">
               <Message/>
             </div>
             <p class="nav-title">Message</p>
           </router-link>
+
           <router-link :to="{name:'home'}" class="nav-item">
             <div class="icon">
               <Bookmark/>
             </div>
             <p class="nav-title">Bookmarks</p>
           </router-link>
+
           <router-link :to="{name:'home'}" class="nav-item">
             <div class="icon">
               <List/>
             </div>
             <p class="nav-title">Lists</p>
           </router-link>
-          <router-link :to="{name:'profile'}" class="nav-item">
+
+          <router-link :to="{name:'home'}" class="nav-item">
             <div class="icon">
               <List/>
             </div>
             <p class="nav-title">Profile</p>
           </router-link>
+          
           <router-link :to="{name:'home'}" class="nav-item">
             <div class="icon">
               <Profile/>
             </div>
             <p class="nav-title">More</p>
-          </router-link>
+          </router-link> 
 
-          <a class="btn tweet" @click="increment"
-            ><p class="btn-title">Tweet</p></a
-          >
+          <a class="btn tweet">
+            <p class="btn-title">Tweet</p>
+          </a>
         </div>
         <div class="profile-summary">
           <div class="profile-img">

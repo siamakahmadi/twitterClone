@@ -7,7 +7,7 @@
 
       <!-- <NewTweet /> -->
 
-      <Tweet
+      <!-- <Tweet
         v-for="item in tweets"
         :key="item.id"
         :userName="item.userName"
@@ -15,15 +15,15 @@
         :tweetTime="item.time"
         :userId="item.userId"
         :tweetBody="item.tweetBody"
-      />
+      /> -->
     </div>
   </div>
 </template>
 
 
 <script>
-import NewTweet from "@/components/NewTweet/index.vue";
-import Tweet from "@/components/Tweet/index.vue";
+// import NewTweet from "@/components/NewTweet/index.vue";
+// import Tweet from "@/components/Tweet/index.vue";
 export default {
   data() {
     return {
@@ -68,8 +68,8 @@ export default {
     };
   },
   components: {
-    NewTweet,
-    Tweet,
+    // NewTweet,
+    // Tweet,
   },
 };
 </script>

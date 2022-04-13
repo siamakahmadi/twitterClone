@@ -73,7 +73,7 @@
       </div>
 
       <div class="user-tweets">
-        <Tweet
+        <!-- <Tweet
           v-for="item in tweets"
           :key="item.id"
           :userName="item.userName"
@@ -81,7 +81,7 @@
           :tweetTime="item.time"
           :userId="item.userId"
           :tweetBody="item.tweetBody"
-        />
+        /> -->
       </div>
     </div>
   </div>
@@ -90,7 +90,7 @@
 <script>
 import LeftIcon from "./Icon/LeftIcon.vue";
 import MoreIcon from "./Icon/MoreIcon.vue";
-import Tweet from "@/components/Tweet/index.vue";
+// import Tweet from "@/components/Tweet/index.vue";
 
 export default {
   data() {
@@ -138,7 +138,7 @@ export default {
   components: {
     LeftIcon,
     MoreIcon,
-    Tweet,
+    // Tweet,
   },
 };
 </script>

@@ -1,3 +1,67 @@
 .notification-container{
     padding: 35px 25px;
+    .notification-list{
+        margin-top: 44px;
+        .notification-component{
+            margin-bottom: 18px;
+            align-items: baseline;
+            padding: 30px;
+            background: #0B0B0D;
+            border-radius: 30px;
+            display: flex;
+            gap: 22px;
+            .body{
+                .users-reaction-profile{
+                    display: flex;
+                    gap: 5px;
+                    .user{
+                        width: 38px;
+                        height: 38px;
+                        border-radius: 70px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .users-reaction-profile{
+                    display: flex;
+                    margin-top: 14px;
+                    .user-name{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 19px;
+                        display: flex;
+                        align-items: center;
+                        color: #FFFFFF;
+                    }
+                    .title{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 19px;
+                        display: flex;
+                        align-items: center;
+                        color: #9A9A9A;
+                    }
+
+                }
+                .tweet-action{
+                    margin-top: 14px;
+                    .text{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 19px;
+                        display: flex;
+                        align-items: center;
+                        color: #656565;
+                    }
+                }
+            }
+        }
+    }
 }

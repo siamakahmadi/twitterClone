@@ -5,7 +5,7 @@
         <template v-slot:title> Home </template>
       </PageTitle>
 
-      <NewTweet />
+      <!-- <NewTweet /> -->
 
       <Tweet
         v-for="item in tweets"

@@ -1,7 +1,9 @@
 <template>
   <div class="main-section">
     <div class="container">
-      <p class="main-title">Home</p>
+      <PageTitle>
+        <template v-slot:title> Home </template>
+      </PageTitle>
 
       <NewTweet />
 
@@ -14,15 +16,14 @@
         :userId="item.userId"
         :tweetBody="item.tweetBody"
       />
-      
     </div>
   </div>
 </template>
 
 
 <script>
-import NewTweet from "../../components/NewTweet/index.vue";
-import Tweet from "../../components/Tweet/index.vue";
+import NewTweet from "@/components/NewTweet/index.vue";
+import Tweet from "@/components/Tweet/index.vue";
 export default {
   data() {
     return {

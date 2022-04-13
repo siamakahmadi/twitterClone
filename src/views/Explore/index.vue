@@ -1,7 +1,5 @@
 <template>
-
-  <PageTitle title="Message"/>
-  
+  <PageTitle title="Explore"/>
 </template>
 
 <script>

@@ -1,0 +1,14 @@
+.page-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .main-title {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        color: #fff;
+    }
+}

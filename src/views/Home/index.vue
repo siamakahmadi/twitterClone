@@ -21,8 +21,8 @@
 
 
 <script>
-import NewTweet from "@/components/NewTweet/index.vue";
-import Tweet from "@/components/Tweet/index.vue";
+import NewTweet from "../../components/NewTweet/index.vue";
+import Tweet from "../../components/Tweet/index.vue";
 export default {
   data() {
     return {

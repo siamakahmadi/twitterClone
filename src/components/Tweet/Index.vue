@@ -38,18 +38,14 @@
           <div class="icon">
             <Comment />
           </div>
-          <p class="reaction">
-            22
-          </p>
+          <p class="reaction">22</p>
         </div>
 
         <div class="item">
           <div class="icon">
             <Retweet />
           </div>
-          <p class="reaction">
-            3
-          </p>
+          <p class="reaction">3</p>
         </div>
 
         <div class="item">
@@ -58,9 +54,7 @@
               <Like />
             </div>
           </div>
-          <p class="reaction">
-            56
-          </p>
+          <p class="reaction">56</p>
         </div>
 
         <div class="item">

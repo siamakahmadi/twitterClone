@@ -1,6 +1,7 @@
 <template>
   <div class="right-sidebar">
     <slot name="Content"/>
+    <slot name="Direct"/>
   </div>
 </template>
 

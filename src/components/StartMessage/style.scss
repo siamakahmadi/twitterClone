@@ -1,0 +1,30 @@
+.start-message {
+    padding: 36px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .describe-body {
+        .header {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 31px;
+            line-height: 38px;
+            max-width: 390px;
+        }
+        .body {
+            margin-top: 27px;
+            color: #a1a1a1;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        .btn-section{
+            display: flex;
+            align-items: flex-start;
+            margin-top: 51px;
+        }
+    }
+}

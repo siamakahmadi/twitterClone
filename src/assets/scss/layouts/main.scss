@@ -9,7 +9,6 @@
     @media (max-width: 640px) {
         grid-template-columns: auto;
     }
-
 }
 
 .btn {
@@ -48,5 +47,24 @@
         background: linear-gradient(82.68deg, #01429f 26.88%, #1498dd 100%), rgba(196, 196, 196, 0.3);
         border-radius: 70px;
         padding: 11.5px 28.5px;
+    }
+    &.newChat {
+        background: linear-gradient(82.68deg, #01429f 26.88%, #1498dd 100%), rgba(196, 196, 196, 0.3);
+        border-radius: 70px;
+        width: 182px;
+        height: 51px;
+        border: solid;
+        border-image-slice: 0;
+        border-width: 0px;
+        transition: all 0.3s;
+        border: solid 1px transparent;
+        &:hover {
+            background: transparent;
+            border: solid 1px #1498dd;
+            .btn-title {
+                color: #1498dd;
+                transition: all 0.3s;
+            }
+        }
     }
 }

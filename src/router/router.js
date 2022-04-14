@@ -23,7 +23,7 @@ const router = createRouter({
             path:'/message',
             name:'message',
             component:Message,
-            meta:{layout:"Home"}
+            meta:{layout:"Direct"}
         },
         {
             path:'/profile',

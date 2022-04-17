@@ -4,15 +4,25 @@
       <template v-slot:title> home </template>
       <template v-slot:icon> icon </template>
     </PageTitle>
+
+    <DirectRow :isSelect="true"/>  
+
+
+
+
+
   </div>
 </template>
 
 <script>
-export default {};
+import DirectRow from '../../components/DirectRow/index.vue'
+export default {
+  components:{
+    DirectRow
+  }
+};
 </script>
 
-<style>
-.message-container{
-  padding: 35px 25px;
-}
+<style lang="scss">
+@import './style.scss';
 </style>

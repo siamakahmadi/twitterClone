@@ -3,7 +3,7 @@
       <p class="main-title">
         <slot name="title" />
       </p>
-      <div>
+      <div class="icons">
         <slot name="icon" />
       </div>
   </div>

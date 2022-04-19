@@ -1,9 +1,20 @@
 <template>
   <div class="message-container">
     <PageTitle>
-      <template v-slot:title> home </template>
-      <template v-slot:icon> icon </template>
+      <template #title> Message </template>
+      <template #icon>
+        <div class="icon">
+          <img src="./Icon/AddMessage.svg" alt="">
+        </div>
+        <div class="icon">
+          <img src="./Icon/Setting.svg" alt="">
+        </div>
+      </template>
     </PageTitle>
+
+    <div class="saerch-container">
+      <input type="text" placeholder="Saerch Direct..">
+    </div>
 
     <DirectRow
       v-for="direct in directList"

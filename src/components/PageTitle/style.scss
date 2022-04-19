@@ -13,4 +13,11 @@
         line-height: 39px;
         color: #fff;
     }
+    .icons{
+        gap: 20px;
+        display: flex;
+        .icon{
+            cursor: pointer;
+        }
+    }
 }
